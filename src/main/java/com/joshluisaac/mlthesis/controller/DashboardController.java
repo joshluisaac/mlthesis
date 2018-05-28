@@ -35,8 +35,9 @@ public class DashboardController {
   
   @GetMapping(value = "/")
   public Object getDashBoardHome() throws IOException {
-    comp.textToVec("/media/joshua/martian/staffworkspace/phd-thesis/datafiles/");
-    return "home";
+    //comp.textToVec("/media/joshua/martian/staffworkspace/phd-thesis/datafiles/");
+    //return "home";
+    return "redirect:/linearregresmodel";
   }
   
   @GetMapping(value="/regressionml")
